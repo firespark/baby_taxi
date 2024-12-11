@@ -17,6 +17,7 @@
     --dark-blue: #3D4D87;
     --red: #C14D4D;
     --dark-red: #AA3535;
+    --light: #FFFFFF;
     --manrope: 'Manrope', Arial, Helvetica, sans-serif;
     --prata: 'Prata', Arial, Helvetica, sans-serif;
 }
@@ -95,7 +96,7 @@ footer {
     height: 68px;
     border-radius: 10px;
     background-color: var(--red);
-    color: #fff;
+    color: var(--light);
     font-size: 14px;
     font-weight: bold;
     text-transform: uppercase;
@@ -105,6 +106,16 @@ footer {
 
 .button:hover {
     background-color: var(--dark-red);
+}
+
+.button-white {
+    background-color: var(--light);
+    color: var(--main);
+}
+
+.button-white:hover {
+    background-color: var(--light);
+    color: var(--dark-red);
 }
 
 
@@ -189,6 +200,56 @@ nav.main-nav ul li a:hover {
 .banner-description {
     margin-top: 120px;
     font-size: 20px;
+}
+
+/***** CTA *****/
+
+.cta-blocks {
+    display: flex;
+    gap: 19px;
+    margin-top: 90px;
+}
+
+.cta-block img {
+    border-radius: 30px;
+    height: 100%;
+}
+
+.cta-block:nth-child(1) {
+    max-width: 445px;
+}
+
+.cta-block:nth-child(2) {
+    max-width: 755px;
+    padding: 63px 38px;
+    background-color: var(--red);
+    color: var(--light);
+    border-radius: 30px;
+    box-sizing: border-box;
+}
+
+.cta-block:nth-child(3) {
+    max-width: 290px;
+}
+
+.cta-h2 {
+    color: var(--light);
+}
+
+.cta-block-inner {
+    max-width: 550px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.cta-description {
+    line-height: 22px;
+}
+
+.cta-button-block {
+    margin-top: 38px;
 }
 
 /***** SLIDER *****/
