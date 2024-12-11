@@ -3,7 +3,7 @@ const casesSlider = new Swiper('.cases-slides', {
   // Optional parameters
   loop: true,
   slidesPerGroup: 1,
-  slidesPerView: 3,
+  slidesPerView: 4,
 
   // Navigation arrows
   navigation: {
@@ -12,7 +12,7 @@ const casesSlider = new Swiper('.cases-slides', {
   },
   breakpoints: {
     769: {
-      slidesPerView: 3,
+      slidesPerView: 4,
       slidesPerGroup: 1
     },
     0: {
