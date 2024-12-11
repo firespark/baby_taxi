@@ -1,0 +1,117 @@
+@media (max-width: 1903px) {
+
+
+}
+
+@media (max-width: 980px) {
+
+
+}
+
+@media (max-width: 768px) {
+
+
+    .burger {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+    }
+
+    .burger .line {
+        width: 20px;
+        height: 1px;
+        background-color: var(--gold);
+        transition: transform 0.5s;
+    }
+
+    .show-burger .line:first-child {
+        transform: rotate(-45deg) translate(-5px, 100%);
+    }
+
+    .show-burger .line:last-child {
+        transform: rotate(45deg) translate(-5px, -100%);
+    }
+
+    .menu-right {
+        position: fixed;
+        top: 64px;
+        right: -100%;
+        display: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        box-sizing: border-box;
+        background-color: var(--dark);
+        z-index: 999;
+        overflow-y: auto;
+    }
+
+    .menu-right.opened {
+        display: flex;
+        right: 0;
+    }
+
+    @keyframes showNav {
+        from {
+            right: -100%;
+        }
+
+        to {
+            right: 0;
+        }
+    }
+
+    .show-nav {
+        animation: showNav 0.5s ease forwards;
+    }
+
+    @keyframes hideNav {
+        from {
+            right: 0;
+        }
+
+        to {
+            right: -100%;
+        }
+    }
+
+    .hide-nav {
+        animation: hideNav 0.5s ease forwards;
+    }
+
+    .header-container .menu-right nav {
+        display: block;
+    }
+
+    ul.nav-menu {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    ul.nav-menu li {
+        display: block;
+        padding: 12px 20px;
+        text-align: center;
+    }
+
+    ul.nav-menu li a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+}
+
+@media (max-width: 380px) {
+
+    .product-slider .slides {
+        max-width: 320px;
+    }
+}
