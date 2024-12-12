@@ -130,6 +130,10 @@ footer {
     box-sizing: border-box;
 }
 
+.label-dark {
+    border: 1px solid var(--main);
+}
+
 .slider-navigation {
     display: flex;
     gap: 20px;
@@ -162,8 +166,8 @@ footer {
 .figure-bg.left-figure {
     background-image: url('../img/left-figure.png');
     background-repeat: no-repeat;
-    background-position: left center;
-    background-size: 180px;
+    background-position: -30px 300px;
+    background-size: 180px 988px;
 }
 
 /***** HEADER *****/
@@ -452,10 +456,6 @@ nav.main-nav ul li a:hover {
     min-height: 833px;
 }
 
-.about-bg-blue .label {
-    border: 1px solid var(--main);
-}
-
 .about-inner {
     margin-top: 60px;
     display: flex;
@@ -618,6 +618,94 @@ nav.main-nav ul li a:hover {
 
 .faq-arrow.opened {
     background-image: url('../img/arrow-close.svg');
+}
+
+/***** CONTACTS *****/
+
+.contacts-wrapper {
+    margin-top: 90px;
+    background-color: var(--blue);
+    border-radius: 30px;
+    padding: 53px 0 63px;
+}
+
+.contacts-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts-top-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contacts-top-img {
+    max-width: 600px;
+}
+
+.contacts-top-img img {
+    border-radius: 30px;
+}
+
+.contacts-form {
+    margin-top: 45px;
+}
+
+.form-inputs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 38px 22px;
+}
+
+.contacts-form input {
+    height: 85px;
+    border-radius: 10px;
+    border: 1px dotted var(--main);
+    background-color: transparent;
+    padding: 0 27px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--main);
+}
+
+/* .contacts-form input::placeholder {
+    color: #838485;
+}
+
+.contacts-form input::-webkit-input-placeholder {
+    color: #838485;
+}
+
+.contacts-form input::-moz-placeholder {
+    color: #838485;
+}
+
+.contacts-form input:-ms-input-placeholder {
+    color: #838485;
+}
+
+.contacts-form input::-ms-input-placeholder {
+    color: #838485;
+}
+*/
+
+.contacts-form input:focus-visible {
+    outline: none;
+}
+
+.contacts-form input:focus {
+    outline: 2px solid var(--gold);
+}
+
+.contacts-form .form-button {
+    margin-top: 38px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-agreement {
+    max-width: 50%;
 }
 
 /***** FOOTER *****/
