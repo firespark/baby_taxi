@@ -353,8 +353,6 @@ nav.main-nav ul li a:hover {
     margin-top: 53px;
 }
 
-.slider-navigation.cases-navigation {}
-
 .cases-slider {
     position: relative;
     overflow: hidden;
@@ -514,6 +512,46 @@ nav.main-nav ul li a:hover {
     padding: 0 11px;
 }
 
+.nannies-slider-item img {
+    border-radius: 30px;
+}
+
+/***** GUARANTEE *****/
+
+.guarantee-blocks {
+    display: flex;
+    gap: 24px;
+    margin-top: 90px;
+}
+
+.guarantee-block {
+    flex: 1;
+    max-width: 50%;
+    box-sizing: border-box;
+}
+
+.guarantee-block.red-block {
+    padding: 63px 39px;
+    background-color: var(--red);
+    color: var(--light);
+    border-radius: 30px;
+}
+
+.guarantee-h2 {
+    color: var(--light);
+}
+
+.guarantee-block-inner {
+    max-width: 560px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.guarantee-description {
+    line-height: 22px;
+}
 
 /***** FOOTER *****/
 
