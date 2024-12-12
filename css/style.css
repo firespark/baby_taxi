@@ -509,6 +509,7 @@ nav.main-nav ul li a:hover {
 
 .about-feature-text {
     width: min-content;
+    min-width: 100px;
 }
 
 .about-img {

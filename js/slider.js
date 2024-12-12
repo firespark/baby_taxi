@@ -11,8 +11,16 @@ const casesSlider = new Swiper('.cases-slides', {
     prevEl: '.cases-slider-nav.left',
   },
   breakpoints: {
-    769: {
+    1400: {
       slidesPerView: 4,
+      slidesPerGroup: 1
+    },
+    1100: {
+      slidesPerView: 3,
+      slidesPerGroup: 1
+    },
+    500: {
+      slidesPerView: 2,
       slidesPerGroup: 1
     },
     0: {
@@ -29,8 +37,16 @@ const nanniesSlider = new Swiper('.nannies-slides', {
   slidesPerView: 4,
 
   breakpoints: {
-    769: {
+    1400: {
       slidesPerView: 4,
+      slidesPerGroup: 1
+    },
+    1100: {
+      slidesPerView: 3,
+      slidesPerGroup: 1
+    },
+    500: {
+      slidesPerView: 2,
       slidesPerGroup: 1
     },
     0: {
