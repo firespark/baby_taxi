@@ -279,7 +279,8 @@ nav.main-nav ul li a:hover {
 .cta-blocks {
     display: flex;
     gap: 19px;
-    margin-top: 90px;
+    max-width: fit-content;
+    margin: 90px auto 0;
 }
 
 .cta-block img {
@@ -446,11 +447,11 @@ nav.main-nav ul li a:hover {
     border-radius: 5px;
 }
 
-.cases-feature-title.red {
+.cases-feature.red .cases-feature-title {
     background-color: var(--red);
 }
 
-.cases-feature-title.dark-blue {
+.cases-feature.dark-blue .cases-feature-title {
     background-color: var(--dark-blue);
 }
 
@@ -547,6 +548,10 @@ nav.main-nav ul li a:hover {
     box-sizing: border-box;
 }
 
+.guarantee-block img {
+    border-radius: 30px;
+}
+
 .guarantee-block.red-block {
     padding: 63px 39px;
     background-color: var(--red);
@@ -606,6 +611,7 @@ nav.main-nav ul li a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 12px;
 }
 
 .faq-number {
@@ -821,6 +827,10 @@ nav.footer-nav ul li a:hover {
     text-decoration: underline;
 }
 
+.footer-mobile-buttons {
+    display: none;
+}
+
 
 /***** MODAL *****/
 
@@ -934,7 +944,7 @@ nav.footer-nav ul li a:hover {
     border-radius: 10px;
 }
 
-.form-checked input[type="checkbox"]:checked + label::after {
+.form-checked input[type="checkbox"]:checked+label::after {
     content: '';
     position: absolute;
     left: 5px;
