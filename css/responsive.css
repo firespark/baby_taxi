@@ -108,7 +108,7 @@
 
     .about-img {
         margin-top: -50px;
-      }
+    }
 
 }
 
@@ -134,7 +134,7 @@
 
     .guarantee-block-inner {
         text-align: center;
-        margin:  0 auto;
+        margin: 0 auto;
     }
 
     .guarantee-description {
@@ -245,17 +245,28 @@
         display: none;
     }
 
+    .overlay.shown {
+        position: fixed;
+        display: flex;
+        padding-top: 50px;
+        overflow-y: auto;
+        inset: 0;
+        background-color: rgba(41, 41, 41, 0.6);
+        transition: opacity 300ms ease-in-out;
+        z-index: 2;
+    }
+
     .burger {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: flex-end;
-        ;
         gap: 6px;
         width: 30px;
         cursor: pointer;
         height: fit-content;
         margin-top: 12px;
+        z-index: 9999;
     }
 
     .burger .line {
@@ -269,18 +280,30 @@
         width: 25px;
     }
 
+    .burger.opened {
+        width: 30px;
+        height: 30px;
+        background-image: url('../img/close.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        transition: 0.5s ease-out;
+    }
+
+    .burger.opened .line {
+        display: none;
+    }
+
     .menu-right {
         position: fixed;
-        top: 64px;
+        top: 0;
         right: -100%;
-        display: none;
         display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
+        flex-direction: column;
+        width: 70%;
         height: 100vh;
         box-sizing: border-box;
-        background-color: var(--dark);
+        background-color: var(--light);
         z-index: 999;
         overflow-y: auto;
     }
@@ -288,6 +311,8 @@
     .menu-right.opened {
         display: flex;
         right: 0;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
     @keyframes showNav {
@@ -325,18 +350,49 @@
     ul.nav-menu {
         display: flex;
         flex-direction: column;
-        gap: 8px;
+        gap: 30px;
+        margin-top: 90px;
+        margin-left: 33px;
     }
 
     ul.nav-menu li {
         display: block;
-        padding: 12px 20px;
-        text-align: center;
     }
 
     ul.nav-menu li a {
         color: inherit;
         text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    .menu-right .menu-contacts {
+        text-align: center;
+    }
+
+    .menu-right .main-phone a {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .menu-right .main-email a {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .menu-right .contacts-socials {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-top: 32px;
+        margin-bottom: 56px;
+    }
+
+    .menu-right .contacts-socials .icon {
+        width: 36px;
+        height: 36px;
+        margin: 0;
     }
 
     .banner-blocks {

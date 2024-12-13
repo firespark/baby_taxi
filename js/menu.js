@@ -1,22 +1,15 @@
+
 const menuRight = document.querySelector('.menu-right');
 const menuBurger = document.querySelector('.burger');
-//const overlay = document.querySelector('.overlay');
+const overlay = document.querySelector('.overlay');
 const menuLinks = document.querySelectorAll('.nav-menu-mobile li');
-
-
-/*if (document.documentElement.scrollWidth > 767) {
-    menuRight.classList.remove('showNav');
-    menuRight.classList.remove('hideNav');
-    menuBurger.classList.remove('showBurger');
-    menuBurger.classList.remove('hideBurger')
-}*/
 
 function showHideMenu() {
     document.body.classList.toggle('ohidden');
     menuRight.classList.toggle('opened');
     menuBurger.classList.toggle('opened');
-    //overlay.classList.toggle('shown');
-    
+    overlay.classList.toggle('shown');
+
 
     if (menuRight.classList.contains('hide-nav') ||
         (!menuRight.classList.contains('show-nav') && !menuRight.classList.contains('hide-nav'))
@@ -49,16 +42,16 @@ menuLinks.forEach(link => {
     link.addEventListener('click', showHideMenu);
 });
 
-/* overlay.onclick = function () {
+overlay.onclick = function () {
     showHideMenu();
-}; */
+};
 
 document.addEventListener('keydown', function(e) {
-	if( e.code === 'Escape' ){ 
+	if( e.code === 'Escape' ){
 		document.body.classList.remove('ohidden');
         menuRight.classList.remove('opened');
         menuBurger.classList.remove('opened');
-        //overlay.classList.remove('shown');
+        overlay.classList.remove('shown');
         menuBurger.classList.remove('show-burger');
         menuBurger.classList.add('hide-burger');
         menuRight.classList.remove('show-nav');
@@ -67,18 +60,9 @@ document.addEventListener('keydown', function(e) {
 });
 
 window.addEventListener('resize', () => {
-    if (document.documentElement.scrollWidth < 768) {
+    if (document.documentElement.scrollWidth <= 890) {
         menuRight.classList.remove('hide-nav');
         menuBurger.classList.remove('hide-burger');
-        
-    }
-    else {
-        if (menuRight.classList.contains('opened')) {
-            document.body.classList.remove('ohidden');
-            menuRight.classList.remove('opened');
-            menuRight.classList.remove('show-nav');
-            menuBurger.classList.remove('opened');
-            menuBurger.classList.remove('show-burger');
-        }
     }
 });
+

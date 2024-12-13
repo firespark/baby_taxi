@@ -166,7 +166,7 @@ footer {
 .figure-bg.left-figure {
     background-image: url('../img/left-figure.png');
     background-repeat: no-repeat;
-    background-position: -30px 300px;
+    background-position: -26px 300px;
     background-size: 180px 988px;
 }
 
@@ -225,6 +225,10 @@ nav.main-nav ul li a {
 
 nav.main-nav ul li a:hover {
     text-decoration: underline;
+}
+
+.overlay {
+    display: none;
 }
 
 .burger {
@@ -400,6 +404,7 @@ nav.main-nav ul li a:hover {
 .cases-slider-top {
     display: flex;
     justify-content: space-between;
+    gap: 5px;
 }
 
 .cases-title {
@@ -520,6 +525,7 @@ nav.main-nav ul li a:hover {
 
 .nannies-slider-item {
     padding: 0 11px;
+    text-align: center;
 }
 
 .nannies-slider-item img {
