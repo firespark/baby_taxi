@@ -40,6 +40,7 @@ const casesSlider = new Swiper('.cases-slides', {
       },
     },
     0: {
+      spaceBetween: 30,
       slidesPerGroup: 1,
       slidesPerView: 1,
       grid: {
@@ -83,6 +84,7 @@ const nanniesSlider = new Swiper('.nannies-slides', {
       },
     },
     0: {
+      spaceBetween: 30,
       slidesPerGroup: 1,
       slidesPerView: 1,
       grid: {

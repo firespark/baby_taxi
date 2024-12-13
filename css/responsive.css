@@ -4,6 +4,12 @@
         max-width: 95%;
     }
 }
+@media (max-width: 1650px) and (min-width:1156px) {
+    
+    .nannies-slides {
+        max-width: 1156px !important;
+    }
+}
 
 @media (max-width: 1620px) {
 
@@ -607,10 +613,6 @@
         display: none;
     }
 
-    .swiper-grid>.swiper-wrapper {
-        gap: 30px;
-    }
-
     .cases-slider {
         margin-top: 35px;
         padding: 0;
@@ -742,7 +744,6 @@
 
     .nannies-slider-item img {
         border-radius: 10px;
-        max-width: 340px;
     }
 
     .guarantee-blocks {
@@ -782,4 +783,10 @@
         display: block;
     }
 
+}
+
+@media (min-width: 380px) and (max-width: 400px) {
+    .nannies-slider-item img {
+        max-width: 340px;
+    }
 }
