@@ -159,14 +159,14 @@ footer {
 .figure-bg.right-figure {
     background-image: url('../img/right-figure.png');
     background-repeat: no-repeat;
-    background-position: right center;
+    background-position: right 53%;
     background-size: 170px;
 }
 
 .figure-bg.left-figure {
     background-image: url('../img/left-figure.png');
     background-repeat: no-repeat;
-    background-position: -26px 300px;
+    background-position: -10px 315px;
     background-size: 180px 988px;
 }
 
@@ -242,7 +242,7 @@ nav.main-nav ul li a:hover {
 /***** BANNER *****/
 
 .banner-blocks {
-    margin-top: 20px;
+    margin-top: 15px;
     display: flex;
     gap: 20px;
 }
@@ -259,6 +259,7 @@ nav.main-nav ul li a:hover {
     align-items: center;
     background-color: var(--blue);
     border-radius: 30px;
+    padding-left: 30px;
 }
 
 .banner-block-img {
@@ -270,7 +271,7 @@ nav.main-nav ul li a:hover {
 }
 
 .banner-description {
-    margin-top: 120px;
+    margin-top: 110px;
     font-size: 20px;
 }
 
@@ -283,8 +284,8 @@ nav.main-nav ul li a:hover {
 .cta-blocks {
     display: flex;
     gap: 19px;
-    max-width: fit-content;
-    margin: 90px auto 0;
+    /* max-width: fit-content; */
+    margin-top: 90px;
 }
 
 .cta-block img {
@@ -332,7 +333,7 @@ nav.main-nav ul li a:hover {
 .cta-contacts-socials {
     position: absolute;
     top: 3px;
-    right: 31px;
+    right: 15px;
 }
 
 .contacts-socials a {
@@ -367,6 +368,7 @@ nav.main-nav ul li a:hover {
 
 .cases-top-container {
     padding-left: 62px;
+    margin-top: 110px;
 }
 
 .cases-top {
@@ -386,6 +388,7 @@ nav.main-nav ul li a:hover {
     margin: 85px auto 0;
     padding: 0 32px;
     box-sizing: border-box;
+    margin-top: 100px;
 }
 
 
@@ -415,7 +418,7 @@ nav.main-nav ul li a:hover {
 }
 
 .cases-description {
-    margin-top: 2px;
+    margin-top: 7px;
     text-transform: uppercase;
     font-size: 14px;
 }
@@ -509,7 +512,7 @@ nav.main-nav ul li a:hover {
 }
 
 .about-img {
-    margin-top: -300px;
+    margin-top: -305px;
 }
 
 .about-img img {
@@ -519,8 +522,8 @@ nav.main-nav ul li a:hover {
 /***** NANNIES *****/
 
 .nannies-slider {
-    padding: 0 30px;
-    margin-top: 93px;
+    padding: 0 20px;
+    margin-top: 85px;
 }
 
 .nannies-slider-item {
@@ -584,7 +587,7 @@ nav.main-nav ul li a:hover {
 }
 
 .faq-questions {
-    margin-top: 84px;
+    margin-top: 78px;
     display: flex;
     gap: 25px;
 }
@@ -621,10 +624,12 @@ nav.main-nav ul li a:hover {
 }
 
 .faq-arrow {
-    width: 34px;
+    width: 44px;
     height: 34px;
     background-image: url('../img/arrow.svg');
-    background-size: 100% 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .faq-question-body {
@@ -644,7 +649,7 @@ nav.main-nav ul li a:hover {
 /***** CONTACTS *****/
 
 .contacts-wrapper {
-    margin-top: 90px;
+    margin-top: 70px;
     background-color: var(--blue);
     border-radius: 30px;
     padding: 53px 0 63px;
@@ -808,7 +813,7 @@ nav.footer-nav ul li a:hover {
 }
 
 .footer-devider {
-    margin: 53px 32px 20px;
+    margin: 43px 32px 20px;
     border-top: 1px solid #CCCECE;
 }
 
