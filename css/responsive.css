@@ -4,8 +4,9 @@
         max-width: 95%;
     }
 }
+
 @media (max-width: 1650px) and (min-width:1156px) {
-    
+
     .nannies-slides {
         max-width: 1156px !important;
     }
@@ -74,6 +75,13 @@
 
 }
 
+@media (min-width: 1220px) {
+    .banner-block {
+        height: 722px;
+    }
+
+}
+
 @media (max-width: 1200px) {
     .cta-blocks {
         flex-wrap: wrap;
@@ -124,6 +132,20 @@
 
 }
 
+@media (min-width: 1101px) {
+    .guarantee-block {
+        height: 500px;
+        overflow: hidden;
+        border-radius: 30px;
+    }
+
+    .guarantee-block img {
+        height: 100%;
+        width: auto;
+        max-width: fit-content;
+    }
+}
+
 @media (max-width: 1100px) {
     .guarantee-blocks {
         margin-top: 70px;
@@ -155,7 +177,7 @@
     }
 
     .footer-bg {
-        margin: 29px 20px 0;
+        margin: 29px 20px 70px;
         background-color: initial;
         padding: 0 0 10px;
     }
@@ -220,6 +242,10 @@
 
     .footer-mobile-buttons {
         display: flex;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        z-index: 2;
     }
 
     .footer-mobile-button {
@@ -244,6 +270,27 @@
     }
 }
 
+@media (min-width: 891px) {
+    .banner-block {
+        width: 50%;
+        overflow: hidden;
+        border-radius: 30px;
+    }
+
+    .banner-block-img {
+        height: 100%;
+        width: auto;
+        max-width: fit-content;
+    }
+
+}
+
+@media (min-width: 891px) and (max-width: 1219px) {
+    .banner-block {
+        height: 472px;
+    }
+}
+
 @media (max-width: 890px) {
 
     .label {
@@ -262,7 +309,7 @@
         inset: 0;
         background-color: rgba(41, 41, 41, 0.6);
         transition: opacity 300ms ease-in-out;
-        z-index: 2;
+        z-index: 3;
     }
 
     .burger {
@@ -422,17 +469,19 @@
     .banner-block-inner {
         max-width: 100%;
         margin-top: 40px;
-        padding: 2px;
+        padding: 0;
     }
 
     .banner-block-inner h1 {
         text-align: center;
         margin: 0 13px;
+        padding: 2px;
     }
 
     .banner-description {
         font-size: 16px;
         text-align: center;
+        padding: 2px;
     }
 
     .banner-block-inner .button {
